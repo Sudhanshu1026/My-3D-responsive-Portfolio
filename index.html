@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" scroll-behavior: smooth;>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,15 +16,15 @@
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
       <nav class="navbar">
-        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#Home-id" style="--i: 1" class="active">Home</a>
         <a href="#about" style="--i: 2">About</a>
-        <a href="#skills" style="--i: 3">Skills</a>
+        <a href="#certifications" style="--i: 3">Certificates</a>
         <a href="#project" style="--i: 4">Projects</a>
         <a href="#contact" style="--i: 5">Contact</a>
       </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="Home-id">
       <div class="home-content">
         <h3>Hello ! It's Me</h3>
         <h1>Sudhanshu Singh</h1>
@@ -96,50 +96,39 @@
               <i class="bx bx-code" style="color: #00eeff"></i>
               <h2>UI/UX Design</h2>
               <p>
-                As a Frontend UI/UX Designer and Web Developer, I specialize in
-                creating intuitive, visually appealing, and highly responsive
-                user interfaces that deliver seamless user experiences. My
-                services include designing modern website layouts, building
-                pixel-perfect frontend components, optimizing performance for
-                all screen sizes, and ensuring accessibility and usability. I
-                combine creativity with technical expertise to turn concepts
-                into interactive digital experiences—tailored to meet both user
-                needs and business goals.
+                I design and develop clean, modern, and fully responsive user
+                interfaces. My focus is on creating smooth user experiences,
+                pixel-perfect layouts, and fast-loading, well-structured
+                frontends.I combine creativity with technical skill to turn
+                ideas into functional, visually appealing digital experiences.
               </p>
-              <a href="#" class="read">Know More</a>
+              <a href="service-uiux.html" class="read">Know More</a>
             </div>
             <div>
               <i class="bx bx-crop" style="color: #00eeff"></i>
               <h2>Responsive Web Development</h2>
               <p>
-                As a Frontend Responsive Web Developer, I specialize in building
-                visually appealing, mobile-friendly websites that adapt
-                seamlessly across all devices and screen sizes. My services
-                include translating UI/UX designs into functional and clean
-                code, ensuring cross-browser compatibility, and optimizing
-                performance for fast loading and smooth user interactions. I
-                focus on writing scalable and maintainable frontend code using
-                modern technologies like HTML, CSS, JavaScript, and responsive
-                frameworks to deliver high-quality web experiences that align
-                with user needs and business goals.
+                I build visually appealing, mobile-friendly websites that adapt
+                smoothly across all screens. I turn UI/UX designs into clean,
+                functional code with fast performance and consistent behavior on
+                every browser. My focus is on delivering scalable, responsive
+                frontends using modern technologies to create reliable,
+                high-quality web experiences.
               </p>
-              <a href="#" class="read">Know More</a>
+              <a href="service-webdev.html" class="read">Know More</a>
             </div>
             <div>
               <i class="bx bxl-apple" style="color: #00eeff"></i>
               <h2>Code Review & Debugging</h2>
               <p>
-                As a DSA problem solver, I offer code review and debugging
-                services to help developers identify logic errors, optimize
-                performance, and write cleaner, more efficient solutions. I
-                analyze algorithmic code for correctness, time and space
-                complexity, and adherence to best practices. Whether it's
-                reviewing LeetCode submissions, helping debug a failing
-                solution, or optimizing brute-force code into a more scalable
-                approach, I provide detailed feedback and guidance to improve
-                both code quality and problem-solving skills.
+                I help developers improve their problem-solving and code quality
+                by reviewing logic, debugging errors, and optimizing algorithms.
+                I analyze solutions for correctness, performance, and best
+                practices—whether it’s fixing a failing submission, improving
+                time complexity, or refining brute-force code into a scalable
+                approach.
               </p>
-              <a href="#" class="read">Know More</a>
+              <a href="service-dsa.html" class="read">Know More</a>
             </div>
           </div>
         </div>
@@ -147,8 +136,8 @@
     </section>
 
     <h1 class="sub-title">My <span>Skills</span></h1>
-    <section>
-      <div class="container1" id="Skills">
+    <section class="Myskills" id="Skills-id">
+      <div class="container1">
         <h1 class="heading1">Technical Skills</h1>
         <div class="Technical-bars">
           <div class="bar">
@@ -245,6 +234,65 @@
       </div>
     </section>
 
+    <section class="certifications" id="certifications">
+      <h2 class="sub-title">My <span>Certifications</span></h2>
+
+      <div class="cert-slider">
+        <button class="cert-btn left" onclick="prevCert()">&#10094;</button>
+
+        <div class="cert-wrapper">
+          <div class="cert-track">
+            <div class="cert-card">
+              <img
+                src="DSA Certificate.jpg"
+                alt="Data Structure & Algorithms-Expertifie"
+              />
+              <h3>Data Structure & Algorithms</h3>
+              <p>Expertifie • July 2022</p>
+            </div>
+
+            <div class="cert-card">
+              <img
+                src="Python Certificate.jpg"
+                alt="Python Concurrent Programming"
+              />
+              <h3>Python Concurrent Programming</h3>
+              <p>Infosys Springboard • Sept 2024</p>
+            </div>
+
+            <div class="cert-card">
+              <img
+                src="_AI and ML Certificate .jpg"
+                alt="AI & Machine Learning-IBM Skillbuild"
+              />
+              <h3>AI & Machine Learning</h3>
+              <p>IBM Skillbuild • May 2025</p>
+            </div>
+
+            <div class="cert-card">
+              <img
+                src="Web Dev Certificate.jpg"
+                alt="Complete Web Development-Udemy"
+              />
+              <h3>Complete Web Development</h3>
+              <p>Udemy • Nov 2025</p>
+            </div>
+
+            <div class="cert-card">
+              <img
+                src="AI For Begginers Certificate.jpg"
+                alt="AI for Beginners-HP"
+              />
+              <h3>AI for Beginners</h3>
+              <p>HP • Apr 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="cert-btn right" onclick="nextCert()">&#10095;</button>
+      </div>
+    </section>
+
     <section>
       <div class="portfolio" id="project">
         <div class="main-text" id="project">
@@ -257,9 +305,10 @@
                 <h5>Sorting Visualizer</h5>
                 <p>
                   An web-based platform that visually demonstrates the working
-                   of various sorting algorithms such as Bubble Sort,Selection Sort,
-                  Insertion Sort,Merge Sort,and Quick Sort. It includes dynamic 
-                    animations, adjustable speed controls, and responsive design.
+                  of various sorting algorithms such as Bubble Sort,Selection
+                  Sort, Insertion Sort,Merge Sort,and Quick Sort. It includes
+                  dynamic animations, adjustable speed controls, and responsive
+                  design.
                 </p>
 
                 <a href="https://sorting-visualizer-sudhanshu.vercel.app/"
@@ -272,10 +321,10 @@
               <div class="layer">
                 <h5>Fithub–Fitness Membership Webpage</h5>
                 <p>
-                  A fitness membership platform designed
-                   to help users explore training programs, membership plans, and fitness 
-                   services with ease. The layout focuses on clarity, smooth transitions, 
-                   and an enjoyable browsing experience.
+                  A fitness membership platform designed to help users explore
+                  training programs, membership plans, and fitness services with
+                  ease. The layout focuses on clarity, smooth transitions, and
+                  an enjoyable browsing experience.
                 </p>
 
                 <a href="https://fithub-iota.vercel.app"
@@ -286,11 +335,12 @@
             <div class="row">
               <img src="Playzz home.png" />
               <div class="layer">
-                <h5>PlayZZ - Esports Tournament Platform </h5>
+                <h5>PlayZZ - Esports Tournament Platform</h5>
                 <p>
-                  An esports tournament platform enabling players to register, book slots, and 
-                  compete in online and LAN gaming events.Designed with a responsive UI, seamless 
-                  user flow, and scalable structure for future feature expansion.
+                  An esports tournament platform enabling players to register,
+                  book slots, and compete in online and LAN gaming
+                  events.Designed with a responsive UI, seamless user flow, and
+                  scalable structure for future feature expansion.
                 </p>
 
                 <a href="https://playzz-esports.vercel.app/"

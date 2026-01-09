@@ -1,116 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
-  <link rel="stylesheet" href="style.css"> <!-- optional: link to your CSS -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #263f7f;
-      color: #1d1f94;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      text-align: center;
-      color: #222;
-    }
-    .profile-pic {
-      display: block;
-      margin: 20px auto;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #333;
-    }
-    .social-links {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .social-links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    .social-links a:hover {
-      color: #007BFF;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sudhanshu Singh</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="about.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress"></div>
 
-  <div class="container">
-    <h1>About Me</h1>
-    <img src="Profile Picture.png" alt="Your Photo" class="profile-pic">
 
-    <h2>Hi, I'm Sudhanshu Singh 👋</h2>
-    <p>
-      I am a passionate <strong>Frontend Developer</strong> and <strong>DSA problem solver</strong>.  
-      I love creating interactive, user-friendly websites and solving real-world problems through efficient algorithms.
-    </p>
+    <!-- PAGE TITLE -->
+    <h1 class="hacker-title">> ABOUT_ME<span class="cursor">_</span></h1>
 
-    <h2>My Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>React.js, Tailwind CSS</li>
-      <li>Data Structures & Algorithms</li>
-      <li>Responsive Web Design</li>
-    </ul>
-
-    <h2>Education</h2>
-    <p>
-      🎓 B.Tech in Information Technology  
-      from Ajay Kumar Garg Engineering College,Ghaziabad.
-    </p>
-
-    <h2>Hobbies</h2>
-    <p>
-      📖 Reading tech blogs <br> 🎮 Gaming <br> 🎵 Listening to music <br> 🏋️ Fitness
-    </p>
-
-    <div class="social-links">
-      <h2>Connect with me</h2>
-      <a href="https://github.com/your-username" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a>
-      <a href="mailto:yourmail@example.com">Email</a>
+    <!-- PROFILE IMAGE -->
+    <div class="profile-image-container">
+        <img src="Profile picture.png" class="profile-image">
     </div>
-  </div>
+
+    <section class="about-timeline">
+
+        <!-- INTRO SECTION -->
+        <div class="timeline-item fade-section about-block">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+
+                <h1 class="heading1">Introduction</h1>
+
+                <p>
+                  <strong>
+                    I am <b>Sudhanshu Singh</b>, a dedicated and self-motivated 
+                    individual who enjoys building meaningful projects, learning new 
+                    things and growing every day.I value consistency, discipline, 
+                    creativity and a strong mindset. <br> I’m a passionate Problem Solver along 
+                    with expertise in responsive web design and intuitive UI/UX development.
+                    I create clean, user-friendly interfaces that adapt seamlessly across devices.
+                    Alongside web development, <br /><br />
+                    I’m deeply interested in Data Structures 
+                    and Algorithms, having solved 300+ problems on LeetCode.
+                    </strong>
+                </p>
+
+            </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="timeline-item fade-section about-block">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+
+                <h1 class="heading1">Education</h1>
+
+                <ul>
+                  <strong>
+                    <li><b>B.Tech CSE — AKGEC</b> (77%, 2022–2026)</li>
+                    <li><b>Intermediate — CBSE</b> (88%, 2021–2022)</li>
+                    <li><b>High School — CBSE</b> (92%, 2019–2020)</li>
+                    </strong>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- WORK EXPERIENCE -->
+        <div class="timeline-item fade-section about-block">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+
+                <h1 class="heading1">Work Experience</h1>
+
+                <ul>
+                  <strong>
+                    <li><b>Frontend Developer Intern — BLW</b> (July–Aug 2025)</li>
+                    <li>Built UI for Case Tracking System</li>
+                    <li>Helped onboard BLW cinema hall to BookMyShow</li>
+                    <li>Worked with government IT teams</li>
+                    </strong>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+        <div class="timeline-item fade-section about-block">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+
+                <h1 class="heading1">Achievements</h1>
+
+                <ul>
+                  <strong>
+                    <li>Solved <b>400+ DSA problems</b></li>
+                    <li>Published 2 research papers</li>
+                    <li>Delivered multiple real-world frontend projects</li>
+                    </strong>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- STRENGTHS -->
+        <div class="timeline-item fade-section about-block">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+
+                <h1 class="heading1">Personal Strengths</h1>
+
+                <ul>
+                  <strong>
+                    <li>Confident communication</li>
+                    <li>Quick learner & adaptable</li>
+                    <li>Consistent & disciplined</li>
+                    <li>Creative + logical mindset</li>
+                    </strong>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- HOBBIES -->
+        <div class="timeline-item fade-section about-block">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+
+                <h1 class="heading1">Hobbies & Interests</h1>
+
+                <ul>
+                  <strong>
+                    <li>Coding & problem solving</li>
+                    <li>Fitness & sports</li>
+                    <li>Travel & photography</li>
+                    <li>Wildlife documentaries</li>
+                    </strong>
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="about.js"></script>
 
 </body>
 </html>

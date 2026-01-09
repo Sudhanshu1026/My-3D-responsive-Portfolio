@@ -56,6 +56,7 @@ body {
 }
 
 .home {
+  scroll-margin-top: 120px;
   position: relative;
   width: 100%;
   justify-content: space-between;
@@ -172,10 +173,11 @@ body {
 
 
 
-
+/* ABOUT ME Section */ 
 
 
 .about {
+  scroll-margin-top: 120px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -212,10 +214,15 @@ body {
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
 }
 
+
+
+/* MY SERVICES Section */
+
 #services {
+  scroll-margin-top: 120px;
   color: aliceblue;
   font-size: 20px;
   line-height: 0.9;
@@ -307,15 +314,16 @@ body {
 
 
 
-
-
-
-
+/* MY SKILLS Section*/
 
 
 section{
     display: flex;
     flex-wrap: wrap;
+}
+
+#Skills-id {
+  scroll-margin-top: 220px;
 }
 
 
@@ -335,7 +343,6 @@ section{
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
-    margin-top: -5rem;
 }
 
 .bar{
@@ -481,10 +488,6 @@ opacity: 0;
 
 
 
-
-
-
-
 .radial-bars{
 width: 100%;
 display: flex;
@@ -597,19 +600,143 @@ align-items: flex-start;
 
 
 
+/* MY CERTIFICATION Section */
+
+.certifications {
+  scroll-margin-top: 110px;
+  display: block ;
+  text-align: center ;
+  width: 100%;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.certifications .sub-title {
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 50px auto;
+  margin-bottom: 20px;
+}
+
+.certifications span {
+  color: #0ef;
+}
+
+/* Slider Layout */
+.cert-slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-wrapper {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.cert-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Certificate Card */
+.cert-card {
+  min-width: 100%;
+  padding: 20px;
+  background: transparent;
+  border-radius: 12px;
+  margin: 0;
+  text-align: center;
+  box-shadow: none;
+  border: none;
+}
+
+.cert-card img {
+  width: 100%;
+  max-height: 480px;         
+  object-fit: contain;       
+  border-radius: 10px;
+  border: none ;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.cert-card img:hover {
+  transform: scale(1.04);
+}
+
+.cert-card h3 {
+  margin-top: 15px;
+  color: #0ef;
+  font-size: 22px;
+}
+
+.cert-card p {
+  margin-top: 8px;
+  color: white;
+}
+
+/* Arrows */
+.cert-btn {
+  background: #0ef;
+  border: none;
+  color: black;
+  font-size: 35px;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 20px cyan;
+}
+
+.cert-btn:hover {
+  background: cyan;
+}
+
+.cert-btn:active {
+  transform: scale(0.9);
+}
+
+.cert-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .cert-wrapper {
+    width: 300px;
+  }
+  .cert-card {
+    min-width: 300px;
+  }
+   .cert-card img {
+    max-height: 300px;
+  }
+}
 
 
 
+/* LATEST PROJECTS Section */
 
 
 .main-text{
     padding-top: 130px;
-    margin-top: 200px;
+    margin-top: 60px;
+    
 }
 .main-text h2{
     font-size: 60px;
     line-height: 1;
     text-align: center;
+    margin-bottom: 6rem;
 }
 
 
@@ -696,7 +823,7 @@ align-items: flex-start;
 
 
 
-
+/* CONTACT ME Section */
 
 
 .contact{
