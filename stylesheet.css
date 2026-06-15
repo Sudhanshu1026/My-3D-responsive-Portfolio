@@ -61,7 +61,7 @@ body {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url(Home\ Page.png) no-repeat;
+  background: url(Home\ page.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -187,11 +187,11 @@ body {
 
 .about-img img {
   padding-left: 15%;  
-  padding-bottom: 20%;
-  max-width: 50 0px;
+  padding-bottom: 15%;
+  max-width: 60 0px;
   height: auto;
-  width: 60%;
-  border-radius: 10px;
+  width: 70%;
+  border-radius: 8px;
 }
 
 .about-text h2 {
@@ -416,11 +416,11 @@ opacity: 0;
 }
 
 .progress-line.react span{
-    width: 65%;
+    width: 70%;
 }
 
 .progress-line.dsa span{
-    width: 78%;
+    width: 90%;
 }
 
 
@@ -452,12 +452,12 @@ opacity: 0;
 
 
 .progress-line.react span::after{
-    content: "65%";
+    content: "70%";
 }
 
 
 .progress-line.dsa span::after{
-    content: "78%";
+    content: "90%";
 }
 
  
@@ -921,7 +921,7 @@ margin-top: 130px;
     width: 90%;
     padding: 18px;
     background: #555557;
-    color: #000;
+    color: #03d5f6;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,9 +30,11 @@
         <h1>Sudhanshu Singh</h1>
         <h3>And I'm a <span class="text"></span></h3>
         <p>
-          I'm a Passionate Web Developer with extensive experience over 4 Years,
-          <br />also have a strong passion in Tackling Data Structure and
-          Algorithm Problems <br />over LeetCode.
+          I'm a Software Developer passionate about building responsive web
+          applications and creating efficient digital solutions. <br />
+          <br />
+          I enjoy solving complex problems and building AI-powered agents and
+          workflow automations using n8n.
         </p>
         <div class="home-sci">
           <a
@@ -71,15 +73,16 @@
         <h2>About<span>Me</span></h2>
         <h4>Front End Developer</h4>
         <p>
-          I’m a passionate Frontend Developer with expertise in responsive web
-          design and intuitive UI/UX development. I create clean, user-friendly
-          interfaces that adapt seamlessly across devices. Alongside web
-          development, <br />
+          I'm a Software Developer, Problem Solver, and AI Automation Enthusiast
+          who enjoys building responsive web applications and creating intuitive
+          user experiences. I focus on developing clean, user-friendly, and
+          efficient solutions using modern web technologies. <br />
           <br />
-          I’m deeply interested in Data Structures and Algorithms, having solved <b>400+ <br> problems on LeetCode</b>.<br />
-          <br />This blend of design thinking and algorithmic problem-solving
-          allows me to <br> build efficient, high-performing, and user-centric web
-          applications.
+          Alongside development, I have solved
+          <b>500+ Data Structure and Algorithms Problems</b>, strengthening my
+          analytical and logical thinking skills. I also build AI-powered agents
+          and workflow automations using n8n to create practical solutions that
+          improve efficiency and productivity.
         </p>
 
         <a href="about.html" class="btn-box">Explore</a>
@@ -93,39 +96,38 @@
           <div class="services-list">
             <div>
               <i class="bx bx-code" style="color: #00eeff"></i>
-              <h2>UI/UX Design</h2>
+              <h2>Frontend Development</h2>
               <p>
-                I design and develop clean, modern, and fully responsive user
-                interfaces. My focus is on creating smooth user experiences,
-                pixel-perfect layouts, and fast-loading, well-structured
-                frontends.I combine creativity with technical skill to turn
-                ideas into functional, visually appealing digital experiences.
+                I design and develop modern, responsive, and user-friendly web
+                applications using HTML, CSS, JavaScript, and GSAP. By combining
+                frontend development with UI/UX design principles, I create
+                visually appealing interfaces, intuitive user experiences, and
+                high-performance websites that work seamlessly across all
+                devices and browsers.
               </p>
-              <a href="service-uiux.html" class="read">Know More</a>
+              <a href="service-frontend_dev.html" class="read">Know More</a>
             </div>
             <div>
-              <i class="bx bx-crop" style="color: #00eeff"></i>
-              <h2>Responsive Web Development</h2>
+              <i class="bx bx-bot" style="color: #00eeff"></i>
+              <h2>AI Agents & Workflow Automation</h2>
               <p>
-                I build visually appealing, mobile-friendly websites that adapt
-                smoothly across all screens. I turn UI/UX designs into clean,
-                functional code with fast performance and consistent behavior on
-                every browser. My focus is on delivering scalable, responsive
-                frontends using modern technologies to create reliable,
-                high-quality web experiences.
+                I build AI-powered agents and intelligent automation workflows
+                using n8n. By integrating APIs, AI models, and third-party
+                services, I create solutions that automate repetitive tasks,
+                streamline processes, and improve productivity through smart and
+                efficient workflows.
               </p>
-              <a href="service-webdev.html" class="read">Know More</a>
+              <a href="service-AIautomation.html" class="read">Know More</a>
             </div>
             <div>
               <i class="bx bxl-apple" style="color: #00eeff"></i>
               <h2>Code Review & Debugging</h2>
               <p>
-                I help developers improve their problem-solving and code quality
-                by reviewing logic, debugging errors, and optimizing algorithms.
-                I analyze solutions for correctness, performance, and best
-                practices—whether it’s fixing a failing submission, improving
-                time complexity, or refining brute-force code into a scalable
-                approach.
+                I help developers strengthen their problem-solving skills by
+                reviewing code, debugging errors, and optimizing algorithms.
+                With a strong foundation in Data Structures and Algorithms using
+                C++, I focus on improving logic, performance, and code quality
+                through efficient and scalable solutions.
               </p>
               <a href="service-dsa.html" class="read">Know More</a>
             </div>
@@ -170,9 +172,9 @@
           </div>
 
           <div class="bar">
-            <i style="color: #69bcbc" class="bx bxl-react"></i>
+            <i style="color: #69bcbc" class="bx bx-git-branch"></i>
             <div class="info">
-              <span>React</span>
+              <span>AI Automation (n8n)</span>
             </div>
             <div class="progress-line react">
               <span></span>
@@ -285,6 +287,15 @@
               <h3>AI for Beginners</h3>
               <p>HP • Apr 2025</p>
             </div>
+
+            <div class="cert-card">
+              <img
+                src="n8n Automation Certificate.jpg"
+                alt="Complete n8n Masterclass-Udemy"
+              />
+              <h3>Complete n8n Masterclass</h3>
+              <p>Udemy • July 2026</p>
+            </div>
           </div>
         </div>
 
@@ -361,6 +372,7 @@
           connect—feel free to reach out. I'm always open to opportunities and
           exciting collaborations.
         </p>
+
         <div class="contact-list">
           <li><i class="bx bxs-send"></i> sudhanshusingh1026@gmail.com</li>
           <li><i class="bx bxs-phone"></i> 9508314532</li>
@@ -375,20 +387,24 @@
       </div>
 
       <div class="contact-form">
-        <form action="">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Name" required />
 
-          <input type="" placeholder="Subject" required />
+          <input type="email" id="email" placeholder="Email" required />
+
+          <input type="tel" id="phone" placeholder="Phone Number" required />
+
+          <input type="text" id="subject" placeholder="Subject" required />
+
           <textarea
-            name=""
-            id=""
+            id="message"
             cols="40"
             rows="10"
-            placeholder="Enter Text Here"
+            placeholder="Enter Your Message"
             required
           ></textarea>
-          <input type="submit" value="Submit" class="send" />
+
+          <input type="submit" value="Send" class="send" />
         </form>
       </div>
     </section>

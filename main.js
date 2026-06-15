@@ -1,7 +1,7 @@
 var typed = new Typed(".text", {
-    strings: ["Frontend Developer", "Programmer", "Problem Solver"],
-    typeSpeed: 200,
-    backSpeed: 200,
+    strings: ["Software Developer", "Problem Solver", "AI Automation Enthusiast"],
+    typeSpeed: 100,
+    backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
@@ -48,3 +48,45 @@ window.addEventListener("resize", updateCertSlider);
 
 // Initialize state correctly
 updateCertSlider();
+
+
+
+
+
+
+
+//Contact me section
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const whatsappMessage =
+`*New Portfolio Inquiry*
+
+ Name: ${name}
+ Email: ${email}
+ Phone: ${phone}
+
+ Subject: ${subject}
+
+ Message:
+${message}`;
+
+      const whatsappURL =
+        `https://wa.me/919508314532?text=${encodeURIComponent(whatsappMessage)}`;
+
+      window.open(whatsappURL, "_blank");
+
+      form.reset();
+    });
+  }
+});
